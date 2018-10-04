@@ -1,0 +1,69 @@
+// Primary USF Colors
+$usfGreen: #006747;
+$usfGold: #cfc493;
+
+// Health Variations
+$healthGreen: #00684d;
+$healthGold: #b4a06b;
+$corpBlue: #1cb0ce;
+
+// USF Accent Palette
+$usfLemonGrass: #dbe442;
+$usfApple: #9ccb3b;
+$usfTealGreen: #009374;
+$usfSky: #29afce;
+$usfSeaGlass: #80b0a6;
+$usfSilverGray: #7e96a0;
+$usfStorm: #006484;
+$usfSlate: #466069;
+$usfGrape: #6f2687;
+$usfPitaya: #d60080;
+$usfRhubarb: #bb1847;
+$usfEspresso: #743b19;
+$usfGray1: #92adb6;
+$usfGray2: #b0c4cb;
+$usfGray3: #cfdbdf;
+$usfGray4: #eef2f3;
+
+// Style Guide Color Styles
+.usf--color-green {
+  color: $usfGreen !important;
+}
+.usf--bg-color-green {
+  background-color: $usfGreen !important;
+}
+
+.usf--color-gold {
+  color: $usfGold !important;
+}
+.usf--bg-color-gold {
+  background-color: $usfGold !important;
+}
+
+.usf--color-teal-green {
+  color: $usfTealGreen !important;
+}
+.usf--bg-color-teal-green {
+  background-color: $usfTealGreen !important;
+}
+
+.usf--color-apple {
+  color: $usfApple !important;
+}
+.usf--bg-color-apple {
+  background-color: $usfApple !important;
+}
+
+.usf--color-sky {
+  color: $usfSky !important;
+}
+.usf--bg-color-sky {
+  background-color: $usfSky !important;
+}
+
+.usf--color-slate {
+  color: $usfSlate !important;
+}
+.usf--bg-color-slate {
+  background-color: $usfSlate !important;
+}

@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- MUI Globals -->
+    <link href="styles/framework/mui-noglobals.min.css" rel="stylesheet" type="text/css" />
+    <link href="styles/framework/mui-colors.css" rel="stylesheet" type="text/css" />
+
+    <!-- MUI Style Guide -->
+    <link href="styles/framework/mui-style-guide.css" rel="stylesheet" type="text/css" />
+
+    <!-- USF Stylesheets-->
+    <link href="styles/usf-colors.css" rel="stylesheet" type="text/css" />
+    <link href="styles/usf-health-typography.css" rel="stylesheet" type="text/css" />
+    <link href="styles/flex-grid.css" rel="stylesheet" type="text/css" />
+
+  </head>
+  <body>
+    <div id="sidedrawer" class="mui--no-user-select mui--z3">
+      <div id="sidedrawer-brand" class="mui--appbar-line-height">
+        <span class="mui--text-title">Menu</span>
+      </div>
+      <div class="mui-divider"></div>
+      <ul>
+        <li>
+          <strong>Design</strong>
+          <ul>
+            <li><a href="#grid">Grid</a></li>
+            <li><a href="#css">CSS</a></li>
+            <li><a href="#colors">Colors</a></li>
+            <li><a href="#typography">Typography</a></li>
+            <li><a href="#buttons">Buttons</a></li>
+            <li><a href="#forms">Forms</a></li>
+            <li><a href="#lists">Lists</a></li>
+          </ul>
+        </li>
+        <li>
+          <strong>Patterns</strong>
+          <ul>
+            <li><a href="#patterns">Pattern 1</a></li>
+            <li><a href="#">Pattern 2</a></li>
+            <li><a href="#">Pattern 3</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <header id="header">
+      <div class="mui-appbar mui--appbar-line-height usf--bg-color-green">
+        <div class="mui-container-fluid">
+          <a class="sidedrawer-toggle mui--visible-xs-inline-block mui--visible-sm-inline-block js-show-sidedrawer">☰</a>
+          <a class="sidedrawer-toggle mui--hidden-xs mui--hidden-sm js-hide-sidedrawer">☰</a>
+          <span class="mui--text-title">USF Health Style Guide</span>
+          <img src="images/usf-health-white-sm.png" class="mui--pull-right">
+        </div>
+      </div>
+    </header>
+    <div id="content-wrapper">
+      <div class="mui--appbar-height"></div>
+      <div class="mui-container-fluid">
+<!-- START Overview -->
+        <h1>Style Guide</h1>
+        <p>As USF IT continues to grow, we are faced with applying a cohesive style to each of our websites and applications. We created this styleguide to act as a central location where we house a live inventory of UI components, brand guidelines, brand assets, code snippets, developer guidelines and more. Anyone working in USF IT is encouraged to stay familiar with this styleguide and help ensure that it is kept up-to-date.</p>
+<!-- END Overview -->
+
+<!-- START Style Guide -->
+<div class="mui-row">
+    <div class="mui-col-md-12">
+      <h1 id="grid">
+        Grid
+      </h1>
+    </div>
+  </div>
+  <div class="mui-row">
+    <div class="mui-col-md-6">
+      <h2>
+        The Problem
+      </h2>
+      <p>
+        You&#39;ve got tons of content, each needing different sized vertical columns, and don&#39;t know how to quick and easily get it all done.
+      </p>
+      <h2>
+        The Solution
+      </h2>
+      <p>
+        Flex grid! The grid is built around three key elements: containers, rows, and columns. Containers create base padding for the page; rows create a max-width and contain the columns; and columns create the final structure. Everything on your page that you don&#39;t give a specific structural style to should be within a container, row and column.
+      </p>
+      <h2>
+        How to Use
+      </h2>
+      <p>
+        Using this framework is easy. Here&#39;s how your code will look when you use a series of <code>&lt;div&gt;</code> tags to create vertical columns.
+      </p>
+      <h2>
+        Nesting Support
+      </h2>
+      <p>
+        In the Grid you can nest columns down as far as you&#39;d like. Just embed rows inside columns and go from there. Each embedded row can contain up to ___ columns.
+      </p>
+      <p>
+        [ code ]
+      </p>
+    </div>
+    <div class="mui-col-md-6">
+      <!-- START Flex Grid -->
+        <!-- Full Width -->
+          <div class="flex-grid-01">
+              <div class="col">
+                  <h2>Full Width</h2>
+              </div>
+          </div>
+
+          <!-- Half-Half -->
+          <div class="flex-grid-02">
+              <div class="col">
+                  <h2>Half-Half</h2>
+              </div>
+              <div class="col">
+                  <h2>Half-Half</h2>
+              </div>
+          </div>
+
+          <!-- Three Across -->
+          <div class="flex-grid-03">
+              <div class="col">
+                  <h2>Three Across</h2>
+              </div>
+              <div class="col">
+                  <h2>Three Across</h2>
+              </div>
+              <div class="col">
+                  <h2>Three Across</h2>
+              </div>
+          </div>
+
+          <!-- Two Third/One Third -->
+          <div class="flex-grid-thirds-01">
+              <div class="col">
+                  <h2>Two Third</h2>
+              </div>
+              <div class="col">
+                  <h2>One Third</h2>
+              </div>
+          </div>
+
+          <!-- One Third/Two Third -->
+          <div class="flex-grid-thirds-02">
+              <div class="col">
+                  <h2>One Third</h2>
+              </div>
+              <div class="col">
+                  <h2>Two Third</h2>
+              </div>
+          </div>
+      <!-- END Flex Grid -->
+    </div>
+  </div>
+  
+  <div class="mui-row">
+    <div class="mui-col-md-12">
+      <h1 id="colors">
+        Colors
+      </h1>
+    </div>
+  </div>
+  <div class="mui-row">
+    <div class="mui-col-md-6">
+      <h2>
+        When to Use
+      </h2>
+      <p>
+        By default, the correct colors should already be baked into our default style sheets. These colors have been created and approved by UCM. Each color's HEX value is labled in the color chips.
+      </p>
+    </div>
+    <div class="mui-col-md-6">
+      <div class="multi-row">
+        <div class="mui-col-md-6">
+          <strong>Primary USF Colors</strong>
+          <p><span class="color-chip" style="background-color:#006747;" title="#006747"></span>USF Green</p>
+          <p><span class="color-chip" style="background-color:#cfc493;" title="#cfc493"></span>USF Gold</p>
+          <strong>USF Health Variations</strong>
+          <p><span class="color-chip" style="background-color:#00684d;" title="#00684d"></span>USF Health Green</p>
+          <p><span class="color-chip" style="background-color:#b4a06b;" title="#b4a06b"></span>USF Health Gold</p>
+          <p><span class="color-chip" style="background-color:#1cb0ce;" title="#1cb0ce"></span>USF Health Corporate</p>
+        </div>
+      </div>
+      <div class="multi-row">
+        <div class="mui-col-md-6">
+            <strong>USF Accent Palette</strong>
+          <p><span class="color-chip" style="background-color:#dbe442;" title="#dbe442"></span>Lemon Grass</p>
+          <p><span class="color-chip" style="background-color:#9ccb3b;" title="#9ccb3b"></span>Apple</p>
+          <p><span class="color-chip" style="background-color:#009374;" title="#009374"></span>Teal Green</p>
+          <p><span class="color-chip" style="background-color:#29afce;" title="#29afce"></span>Sky</p>
+          <p><span class="color-chip" style="background-color:#80b0a6;" title="#80b0a6"></span>Sea Glass</p>
+          <p><span class="color-chip" style="background-color:#006484;" title="#006484"></span>Storm</p>
+          <p><span class="color-chip" style="background-color:#6f2687;" title="#6f2687"></span>Grape</p>
+          <p><span class="color-chip" style="background-color:#d60080;" title="#d60080"></span>Pitaya</p>
+          <p><span class="color-chip" style="background-color:#bb1847;" title="#bb1847"></span>Rhubarb</p>
+          <p><span class="color-chip" style="background-color:#743b19;" title="#743b19"></span>Espresso</p>
+          <p><span class="color-chip" style="background-color:#466069;" title="#466069"></span>Slate</p>
+          <p><span class="color-chip" style="background-color:#7e96a0;" title="#7e96a0"></span>Silver Gray</p>
+          <p><span class="color-chip" style="background-color:#92adb6;" title="#92adb6"></span>Gray1</p>
+          <p><span class="color-chip" style="background-color:#b0c4cb;" title="#b0c4cb"></span>Gray2</p>
+          <p><span class="color-chip" style="background-color:#cfdbdf;" title="#cfdbdf"></span>Gray3</p>
+          <p><span class="color-chip" style="background-color:#eef2f3;" title="#eef2f3"></span>Gray4</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mui-row">
+    <div class="mui-col-md-12">
+      <h1 id="typography">
+        Typography
+      </h1>
+    </div>
+  </div>
+  <div class="mui-row">
+    <div class="mui-col-md-6">
+      <h2>
+        When to Use
+      </h2>
+      <p>
+        Headings are used to denote different sections of content, usually consisting of related paragraphs and other HTML elements. They range from h1 to h6 and should be styled in a clear hierarchy (i.e., largest to smallest).
+      </p>
+      <h2>
+        When to Use Paragraphs
+      </h2>
+      <p>
+        Paragraphs are groups of sentences, each with a lead (first sentence) and transition (last sentence). They are block level elements, meaning they stack vertically when repeated. Use them as such.
+      </p>
+    </div>
+    <div class="mui-col-md-6">
+      <h1>Headline 1</h1>
+      <h2>Headline 2</h2>
+      <h3>Headline 3</h3>
+      <h4>Headline 4</h4>
+      <h5>Headline 5</h5>
+      <h6>Headline 6</h6>
+      <blockquote cite="Jane Doe">Blockquote Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.</blockquote>
+      <p>Regular body text with a <a href="#">link</a>.</p>
+      <p><em>Italic emphasis text</em></p>
+      <p><del>This text has a strikethrough</del></p>
+      <p><u>This text is underlined.</u></p>
+      <p>Superscript <sup>&reg;</sup></p>
+      <p>Subscript for things like H<sub>2</sub>O</p>
+      <p><small>This small text is small for for fine print, etc.</small></p>
+      <p>The <mark>mark element</mark> indicates a highlight</p>
+      <p><code>Code text looks best in monospace fonts.</code></p>
+    </div>
+  </div>
+  <div class="mui-row">
+    <div class="mui-col-md-12">
+      <h1 id="buttons">
+        Buttons
+      </h1>
+    </div>
+  </div>
+  <div class="mui-row">
+    <div class="mui-col-md-6">
+      <h2>
+        When to Use
+      </h2>
+      <p>
+        Buttons are tied to an action of some kind, whether that button is on a cheese dispenser or launches the rocket that you&#39;re strapped to. On the Web, we follow similar conventions.
+      </p>
+      <h2>
+        How to Use
+      </h2>
+      <p>
+        This solution is perfect when the button needs to submit a form of some kind.
+      </p>
+      <p>
+        Note: Make sure to keep type=&ldquo;submit&rdquo; on the button tag. That&#39;s what tells Internet Explorer to submit the form. This doesn&#39;t matter for anchor tags.
+      </p>
+      <h2>
+        Using the Anchor Tag
+      </h2>
+      <p>
+        When you need the button to take you somewhere (e.g. a sign up button), this is the perfect solution.
+      </p>
+      <h2>
+        Editing the CSS
+      </h2>
+      <p>
+        CSS for buttons can be found in app.css.
+      </p>
+    </div>
+    <div class="mui-col-md-6">
+      <p>
+        <a href="#0" class="button">Button</a>
+      </p>
+    </div>
+  </div>
+  <div class="mui-row">
+    <div class="mui-col-md-12">
+      <h1 id="forms">
+        Forms
+      </h1>
+    </div>
+  </div>
+  <div class="mui-row">
+    <div class="mui-col-md-6">
+      <h2>
+        Elements of a Form
+      </h2>
+      <p>
+        A form should be marked up using it&#39;s default HTML properties. The ones we make use of include (in hierarchical order):
+      </p>
+      <ul>
+        <li>form</li>
+        <li>label</li>
+        <li>input</li>
+        <li>select</li>
+        <li>textarea</li>
+        <li>button</li>
+      </ul>
+      <h2>
+        How to Use
+      </h2>
+      <p>
+        Make forms great and easy to use with the following rules:
+      </p>
+      <ol>
+        <li>Wrap checkboxes and radio buttons within labels for larger hit areas, and be sure to set the for, name, and id attributes for all applicable elements.</li>
+        <li>Series of checkboxes and radio buttons below within a <code>&lt;ul class=&quot;(inline) actions&quot;&gt;</code>.</li>
+        <li>Before selecting any set of fields to use for a required input, explore other options (e.g., radio buttons over select lists).</li>
+      </ol>
+      <h2>
+        Form Layouts
+      </h2>
+      <p>
+        We use a class of &ldquo;nice&rdquo; on most of forms within the application. Within the form, we use a class of &ldquo;input-text&rdquo; for any input field to add a shadow that creates a more clickable look and feel.
+      </p>
+    </div>
+    <div class="mui-col-md-6">
+      <p>
+        [ samples ]
+      </p>
+    </div>
+  </div>
+  <div class="mui-row">
+    <div class="mui-col-md-12">
+      <h1 id="lists">
+        Lists
+      </h1>
+    </div>
+  </div>
+  <div class="mui-row">
+    <div class="mui-col-md-6">
+      <h2>
+        When to Use
+      </h2>
+      <p>
+        Lists are great for presenting a series of related phrases or sentences that need to be read faster (skimming).
+      </p>
+      <h2>
+        Which to Use
+      </h2>
+      <p>
+        Our styles allow for a multitude of lists, including: ul for generic lists and ol for numbered lists.
+      </p>
+      <h2>
+        How to Use
+      </h2>
+      <p>
+        Note the code snippets under each subheading on the right; look there for required classes and list markup.
+      </p>
+      <h2>
+        Editing the CSS
+      </h2>
+      <p>
+        CSS for list styles can be found in foundation.css while custom list styles can be found in app.css.
+      </p>
+    </div>
+    <div class="mui-col-md-6">
+      <p>
+        [ samples ]
+      </p>
+    </div>
+  </div>
+  <div class="mui-row">
+    <div class="mui-col-md-12">
+      <h1 id="patterns">
+        Patterns
+      </h1>
+    </div>
+  </div>
+  <div class="mui-row">
+    <div class="mui-col-md-6">
+      <h2>
+        When to Use
+      </h2>
+      <p>
+        Throughout the website there are patterns that work no matter which module they are part of. We&#39;ll outline the basics and let you know where to use them.
+      </p>
+    </div>
+    <div class="mui-col-md-6">
+      <p>
+        [ project-specific samples ]
+      </p>
+    </div>
+  </div>
+<!-- END Style Guide-->
+      </div>
+    </div>
+    <footer id="footer">
+      <div class="mui-container-fluid">
+        <br>
+        Made with <a href="https://health.usf.edu">♥</a> by USF IT.
+      </div>
+    </footer>
+
+    <!-- Javascripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+    </script>
+    <script src="scripts/mui.min.js"></script>
+    <script src="scripts/mui-static-sidebar.js"></script>
+
+    
+  </body>
+</html>

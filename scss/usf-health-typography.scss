@@ -1,0 +1,71 @@
+// Default colors for headings
+h1, h2   {
+    color: #00684d;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3, h4 {
+    color: #b4a06b;
+}
+
+h5, h6 {
+    color: #466069;
+}
+
+// Default font sizes
+h1, h2, h3 {
+    margin: 14px 0 14px 0;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+}
+
+h4, h5, h6 {
+    margin: 14px 0 14px 0;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 400;
+}
+
+strong {
+    font-weight: 500;
+}
+
+p {
+    font-size: 14px;
+}
+
+// Default typeography stylings
+blockquote {
+    display: block;
+    border-width: 2px 0;
+    border-style: solid;
+    border-color: #eee;
+    padding: 1.5em 0 0.5em;
+    margin: 1.5em 0;
+    position: relative;
+}
+
+blockquote:before {
+    content: '\201C';
+    position: absolute;
+    top: 0em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    width: 3rem;
+    height: 2rem;
+    font: 6em/1.08em Georgia, serif;
+    color: #999;
+    text-align: center;
+}
+
+blockquote:after {
+    content: "\2013 \2003" attr(cite);
+    display: block;
+    text-align: right;
+    font-size: 0.875em;
+    color: #009374;
+}
