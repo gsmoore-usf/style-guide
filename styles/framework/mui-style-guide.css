@@ -23,14 +23,31 @@ buttons {
   padding: 7px 0;
 }
 
-.color-chip {
+.color-chip-sm {
   border-radius: 2px;
   box-shadow: 0 2px 3px 0 rgba(0,0,0,.1), inset 0 0 0 1px rgba(0,0,0,.1);
-  display: inline-block;
-  float: left;
+  display: inline-flex;
   height: 24px;
   margin-right: 8px;
   width: 24px;
+}
+
+.color-chip-md {
+  border-radius: 2px;
+  box-shadow: 0 2px 3px 0 rgba(0,0,0,.1), inset 0 0 0 1px rgba(0,0,0,.1);
+  display: inline-flex;
+  height: 30px;
+  margin-right: 8px;
+  width: 30px;
+}
+
+.color-chip-lg {
+  border-radius: 2px;
+  box-shadow: 0 2px 3px 0 rgba(0,0,0,.1), inset 0 0 0 1px rgba(0,0,0,.1);
+  display: inline-flex;
+  height: 40px;
+  margin-right: 8px;
+  width: 40px;
 }
 
 /**
